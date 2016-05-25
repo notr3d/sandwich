@@ -775,7 +775,7 @@ object {
 }
 .lcw {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
 }
 @media (max-width: 767px) {
   .lcw {
@@ -786,4 +786,34 @@ object {
   .lcw {
     width: 1080px;
   }
+}
+.site-header {
+  background: #333;
+}
+.site-content {
+  background: #ddd;
+}
+.site-footer {
+  background: #000;
+}
+.controls {
+  font-size: 0;
+}
+.controls__item {
+  width: 33.333333%;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .controls__item {
+    width: 100%;
+  }
+}
+.controls__button {
+  width: 100%;
+}
+.content__item {
+  display: none;
+}
+.content__item--visible {
+  display: block;
 }
