@@ -1,0 +1,15 @@
+@import "vendor.less";
+
+@m: ~ "(max-width: 767px)";
+@d: ~ "(min-width: 1080px)";
+
+.lcw {
+	margin: 0 auto;	
+	padding: 0 15px;
+	@media @m {
+		width: 100%;
+	}
+	@media @d {
+		width: 1080px;
+	}
+}

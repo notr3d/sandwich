@@ -1,28 +1,10 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package sandwich
- */
-
-?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sandwich' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'sandwich' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'sandwich' ), 'sandwich', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
+	</div>
+	<footer class="site__footer" role="contentinfo">
+		
+	</footer>
+</div>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 <?php wp_footer(); ?>
-
 </body>
 </html>
