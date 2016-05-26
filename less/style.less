@@ -3,47 +3,292 @@
 @m: ~ "(max-width: 767px)";
 @d: ~ "(min-width: 1080px)";
 
+@orange: #f57c20;
+
 .lcw {
-	margin: 0 auto;	
-	padding: 15px;
+	margin: 0 auto;		
 	@media @m {
 		width: 100%;
+		padding: 0 15px;
 	}
 	@media @d {
 		width: 1080px;
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+
+.col {
+	display: inline-block;
+	vertical-align: top;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #4c4c4c;
+}
+
+h1, h2, h3, h4, h5, h6 {	
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 .site {
-	&-header {
-		background: #333;
+	&-header {		
+		&__wrapper {
+			background: #151516;
+			@media @m {
+				text-align: center;
+			}
+		}
 	}
 	&-content {
-		background: #ddd;
+		
 	}
-	&-footer {
-		background: #000;
+	&-footer {		
+		&__wrapper {
+			background: #000;
+		}
 	}
+	&-logo {
+		width: 230px;
+		height: 110px;
+		padding: 15px;
+	}
+}
+
+.tel {
+	display: inline-block;
+	height: 110px;
+	vertical-align: top;
+	line-height: 80px;
+	font-size: 24px;
+	color: @orange;	
+	text-decoration: none;
+	float: right;
+	padding: 15px;
+	transition: .3s;
+	&:hover {
+		color: lighten(@orange, 10%);
+	}	
+	@media @m {
+		float: none;
+	}
+}
+
+.section-header {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 30px 0;
 }
 
 .controls {
 	font-size: 0;
+	&__wrapper {
+		padding: 0;
+	}
 	&__item {
 		width: 33.333333%;
 		display: inline-block;
+		height: 600px;
+		font-size: 16px;
+		text-align: center;
+		vertical-align: top;
+		padding-top: 200px;	
+		&:nth-child(1) {
+			background: #eee;
+		}
+		&:nth-child(2) {
+			background: #ddd;
+		}
+		&:nth-child(3) {
+			background: #ccc;
+		}		
+		h2 {
+			font-size: 48px;
+			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+			margin: 0;
+			line-height: 50px;
+			height: 100px;
+			width: 300px;
+			margin: 0 auto 30px;
+			@media @m {
+				font-size: 32px;
+				line-height: 35px;
+				height: 50px;
+			}
+		}
+		button {
+			padding: 15px 30px;
+		}
 		@media @m {
 			width: 100%;
+			height: 200px;
+			padding: 15px;
 		}
-	}
-	&__button {
-		width: 100%;
 	}
 }
 .content {
+	&__wrapper {
+		padding: 0;
+	}
 	&__item {
 		display: none;
 		&--visible {
 			display: block;
 		}
 	}
+}
+
+.adv {
+	background: #fcf8e6;
+	padding-top: 60px;
+	&__con {
+		padding: 0 50px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		text-align: center;
+		display: inline-block;
+		flex-basis: 19.777777%;
+		height: 190px;
+		background: @orange;
+		padding-top: 30px;
+		margin: 1px;
+		img {
+			width: 80px;
+			height: 80px;
+			margin-bottom: 30px;
+		}	
+		p {
+			margin: 0;
+		}
+		@media @m {
+			flex-basis: 100%;
+		}
+	}
+}
+.type {
+	padding-top: 100px;
+	margin-top: -100px;
+	background: #151516;
+	h3 {
+		color: @orange;
+	}
+	.col {
+		width: 49.8%;
+		display: inline-block;
+		h4 {
+			text-transform: uppercase;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 15px;
+			color: @orange;
+			font-size: 24px;
+		}
+		@media @m {
+			width: 100%;
+		}
+	}	
+}
+.mount {
+	background: #b2cedc;
+	min-height: 300px;
+	text-align: center;
+	padding: 50px 0;
+	h3 {
+		color: @orange;
+	}
+	&__container {
+		border: 1px solid #000;
+		height: 540px;
+	}
+	&__item {
+		width: 300px;
+		height: 50px;
+		background: #eee;
+		border: 1px solid #000;
+		margin: 5px auto;
+		transition: 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+	}
+}
+.filler {
+	padding-bottom: 60px;
+	background: #fff;
+	&__con {
+		text-align: center;
+	}
+	&__item {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: #b2cedc;
+		display: inline-block;
+		margin: 0 15px;
+	}
+}
+.delivery {
+	background: #151516;
+	h3 {
+		color: #fff;
+	}
+}
+.request {
+	background: @orange;
+	h3 {
+		color: #fff;
+	}	
+}
+.about {
+	&__wrapper {
+		padding: 0 50px;
+		background: #fcf8e6;
+		@media @m {
+			padding: 0 15px;
+		}
+	}
+	.col {
+		&--left {
+			width: 65.88%;
+			padding-right: 30px;
+			@media @m {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+		&--right {
+			width: 33%;
+		}
+	}
+	&__text {
+		p {
+			margin: 0;
+			margin-bottom: 30px;
+		}
+	}
+}
+.address {
+	&__wrapper {
+		background: #fff;
+	}
+}
+.map-container {
+	&__wrapper {
+		padding: 0;
+	}
+}
+.map {
+	height: 360px;
+	background: #eee;
 }
