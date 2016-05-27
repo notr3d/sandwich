@@ -13,8 +13,21 @@
 <div class="site">
 	<header class="site-header" role="banner">
 		<div class="site-header__wrapper lcw">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/site-logo.png" alt="" class="site-logo">
-			<a href="skype:+74957893686" class="tel">+7 (495) <b>789-36-86</b></a>
+			<div class="site-header__item">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/site-logo.png" alt="" class="logo">
+			</div>
+			<div class="site-header__item">
+				<a href="mailto:info@bigmsk" class="mail">info@bigmsk.ru</a>
+			</div>
+			<div class="site-header__item">
+				<a href="skype:+74957893686" class="tel">+7 (495) <b>789-36-86</b></a>
+			</div>
+			<div class="site-header__item">
+				<p class="address">
+					105318, г. Москва,<br>
+					ул. Ибрагимова, д.31, (офис308)
+				</p>
+			</div>
 		</div>		
 	</header>
 	<div class="site-content">

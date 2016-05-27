@@ -4,16 +4,25 @@
 		<section class="controls">
 			<div class="controls__wrapper lcw">
 				<div class="controls__item">
-					<h2>Сэндвич панели</h2>
-					<button id="button-1" class="controls__button">Перейти</button>
+					<div class="controls__container">
+						<div class="controls__img"></div>
+						<h2>Сэндвич панели</h2>
+					</div>
+					<button id="button-1" class="controls__button"></button>
 				</div>
 				<div class="controls__item">
-					<h2>Профлист</h2>
-					<button id="button-2" class="controls__button">Перейти</button>
+					<div class="controls__container">
+						<div class="controls__img"></div>
+						<h2>Профлист</h2>
+					</div>
+					<button id="button-2" class="controls__button"></button>
 				</div>
 				<div class="controls__item">
-					<h2>Горячее цинкование</h2>
-					<button id="button-3" class="controls__button">Перейти</button>
+					<div class="controls__container">
+						<div class="controls__img"></div>
+						<h2>Горячее цинкование</h2>
+					</div>
+					<button id="button-3" class="controls__button"></button>
 				</div>	
 			</div>		
 		</section>
@@ -25,56 +34,60 @@
 							<h3 class="section-header">Преимущества сэндвич панелей</h3>
 							<div class="adv__con">
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Шумоизоляция</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Теплоизоляция</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Огнестойкость</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Экологичность</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Легкость</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Цветовая гамма</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Прочность</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Быстрота монтажа</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Долговечность</p>
 								</div>
 								<div class="adv__item">
-									<img src="" alt="">
-									<p>Text</p>
+									<div class="adv__img"></div>
+									<p>Универсальность</p>
 								</div>							
 							</div>
 						</div>
 					</section>
 					<section class="type">
 						<div class="type__wrapper lcw">
-							<h3 class="section-header">Виды сэндвич панелей</h3>
 							<div class="col col--left">
-								<h4>Стеновые</h4>
+								<h3 class="section-header"><span>Стеновые</span> сэндвич-панели</h4>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/type/1.png" alt="">
+								<div class="type__text">Трехслойные стеновые сэндвич-панели производятся на автоматическом оборудовании и по технологии австралийской фирмы "Hilleng", гарантирующей высокое качество и отличные эксплуатационные свойства панелей
+								</div>
 							</div>
 							<div class="col col--left">
-								<h4>Кровельные</h4>
+								<h3 class="section-header"><span>Кровельные</span> сэндвич-панели</h4>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/type/2.png" alt="">
+								<div class="type__text">Высокие трапециевидные ребра, обеспечивают сверхпрочность крыши и ее устойчивость к воздействию непогоды, снеговым нагрузкам и механическим ударам, кроме того прекрасно отводят воду и не страдают ото льда.</div>
 							</div>
 						</div>						
 					</section>
@@ -82,6 +95,8 @@
 						<div class="mount__wrapper lcw">
 							<h3 class="section-header">Система крепления сэндвич панелей</h3>
 							<div class="mount__container">
+								<div id="trigger1" class="mount__item"></div>
+								<div class="mount__item"></div>
 								<div class="mount__item"></div>
 								<div class="mount__item"></div>
 								<div class="mount__item"></div>

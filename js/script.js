@@ -27,35 +27,45 @@ $(window).bind('mousemove', function(e){
 	});
 }); 
 
-$(window).bind('scroll', function(e){ 
-	var con = $('.mount__container');
-	var item = $('.mount__item');
-	var scrollTop = $(window).scrollTop(); //расст от начала стр
+var con = $('.mount__container');
+var item = $('.mount__item');
+
+$(window).bind('scroll', function(e){ 	
+	var scrollTop = $(window).scrollTop(); //расстояние от начала страницы
 	var start = con.offset().top; // расстояние от начала страницы до начала элемента
 	var conHeight = con.height(); //высота элемента
-	var end = start + conHeight;
-	var windowHeight = $(window).height(); //высота окна
+	var end = start + conHeight; //расстояние от начала страницы до конца элемента
+	var windowHeight = $(window).height(); //высота окна	
 	
-	
-	//элемент внизу и не виден
 	if (scrollTop < start - windowHeight) {
-		console.log('0 элемент внизу и не виден');
-		item.height(50);
+		//console.log('0 элемент внизу и не виден');
+		item.height(0);
 	};
 	if (scrollTop > start - windowHeight && scrollTop < end - windowHeight) {
-		console.log('1 элемент появляется');
-		//item.height(75);
+		//console.log('1 элемент появляется');
+		item.height(25);
 	};
 	if (scrollTop > end - windowHeight && scrollTop < start) {
-		console.log('2 элемент виден');
+		//console.log('2 элемент виден');
 		item.height(100);
 	};
 	if (scrollTop > start && scrollTop < end) {
-		console.log('3 элемент уходит');
-		item.height(50);
+		//console.log('3 элемент уходит');
+		item.height(25);
 	};
 	if (scrollTop > end) {
-		console.log('4 элемент сверху и не виден');
-		//item.height(50);
+		//console.log('4 элемент сверху и не виден');
+		item.height(0);
 	};	
+	/*if (scrollTop + windowHeight / 2 > start + conHeight / 2) {
+		console.log(1);
+	};*/
 });
+
+//даем элементам зет индекс
+var items = con.children().length;
+for (var i = 0; i < items; i++) {
+	$.each(item, function(i, e) {
+		$(e).css('z-index', items - i);
+	});
+};

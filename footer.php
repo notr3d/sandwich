@@ -5,6 +5,7 @@
 		</div>
 	</footer>
 </div>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/ScrollMagic.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
