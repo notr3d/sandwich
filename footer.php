@@ -5,8 +5,11 @@
 		</div>
 	</footer>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/ScrollMagic.js" ></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/debug.addIndicators.js" ></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/animation.gsap.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
 	var center = new google.maps.LatLng(55.789061, 37.729310);

@@ -23,7 +23,7 @@ $(window).bind('mousemove', function(e){
 	
 	var item = $('.mount__item');
 	$.each(item, function(i, e) {
-		$(e).css('transform', 'translate3d( ' + xd / ((i+1)*35) + 'px, ' + yd / ((i+1)*10) + 'px, 0)');
+		$(e).css('transform', 'translate3d( ' + xd / ((i+1)*20) + 'px, ' + yd / ((i+1)*20) + 'px, 0)');
 	});
 }); 
 
@@ -38,24 +38,24 @@ $(window).bind('scroll', function(e){
 	var windowHeight = $(window).height(); //высота окна	
 	
 	if (scrollTop < start - windowHeight) {
-		//console.log('0 элемент внизу и не виден');
-		item.height(0);
+		console.log('0 элемент внизу и не виден');
+		//item.height(0);
 	};
 	if (scrollTop > start - windowHeight && scrollTop < end - windowHeight) {
-		//console.log('1 элемент появляется');
-		item.height(25);
+		console.log('1 элемент появляется');
+		//item.height(25);
 	};
 	if (scrollTop > end - windowHeight && scrollTop < start) {
-		//console.log('2 элемент виден');
-		item.height(100);
+		console.log('2 элемент виден');
+		//item.height(100);
 	};
 	if (scrollTop > start && scrollTop < end) {
-		//console.log('3 элемент уходит');
-		item.height(25);
+		console.log('3 элемент уходит');
+		//item.height(25);
 	};
 	if (scrollTop > end) {
-		//console.log('4 элемент сверху и не виден');
-		item.height(0);
+		console.log('4 элемент сверху и не виден');
+		//item.height(0);
 	};	
 	/*if (scrollTop + windowHeight / 2 > start + conHeight / 2) {
 		console.log(1);
@@ -69,3 +69,37 @@ for (var i = 0; i < items; i++) {
 		$(e).css('z-index', items - i);
 	});
 };
+
+//scrollmagic 
+var controller = new ScrollMagic.Controller();
+
+for (var i = 0; i < items; i++) {
+	$.each(item, function(i, e) {
+		var openTween = TweenMax.to('#tr-'+(i+1), 1, {top: 12.5*(i+1)+'%'});
+		var closeTween = TweenMax.to('#tr-'+(i+1), 1, {top: 35+i*5+'%'});
+
+		var openScene = new ScrollMagic.Scene({triggerElement: "#tr", duration: 270, offset: -150})
+			.setTween(openTween)
+			.addIndicators() 
+			.addTo(controller);
+		var closeScene = new ScrollMagic.Scene({triggerElement: "#tr", duration: 270, offset: 450})
+			.setTween(closeTween)
+			.addIndicators()
+			.addTo(controller);
+	});
+}
+
+
+item.hover(function(){
+	$(this).addClass('active');
+}, function(){
+	$(this).removeClass('active');
+});
+
+item.click(function(){
+	var id = $(this).attr('id').split('-');
+	id = '#descr-' + id[1];
+	var content = $(id);
+	content.addClass('descr__item--visible');
+	content.siblings().removeClass('descr__item--visible');
+});

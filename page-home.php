@@ -94,14 +94,23 @@
 					<section class="mount">
 						<div class="mount__wrapper lcw">
 							<h3 class="section-header">Система крепления сэндвич панелей</h3>
-							<div class="mount__container">
-								<div id="trigger1" class="mount__item"></div>
-								<div class="mount__item"></div>
-								<div class="mount__item"></div>
-								<div class="mount__item"></div>
-								<div class="mount__item"></div>
-								<div class="mount__item"></div>
-								<div class="mount__item"></div>
+							<div id="tr" class="mount__container">
+								<div id="tr-1" class="mount__item"></div>
+								<div id="tr-2" class="mount__item"></div>
+								<div id="tr-3" class="mount__item"></div>
+								<div id="tr-4" class="mount__item"></div>
+								<div id="tr-5" class="mount__item"></div>
+								<div id="tr-6" class="mount__item"></div>
+								<div id="tr-7" class="mount__item"></div>
+							</div>
+							<div class="descr">
+								<div id="descr-1" class="descr__item descr__item--visible">1</div>
+								<div id="descr-2" class="descr__item">2</div>
+								<div id="descr-3" class="descr__item">3</div>
+								<div id="descr-4" class="descr__item">4</div>
+								<div id="descr-5" class="descr__item">5</div>
+								<div id="descr-6" class="descr__item">6</div>
+								<div id="descr-7" class="descr__item">7</div>
 							</div>
 						</div>
 					</section>
