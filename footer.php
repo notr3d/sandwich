@@ -1,7 +1,7 @@
 	</div>
 	<footer class="site-footer" role="contentinfo">
 		<div class="site-footer__wrapper lcw">
-			123
+			<div class="copy">© "Новый Стандарт" 2016</div>			
 		</div>
 	</footer>
 </div>
@@ -10,6 +10,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/ScrollMagic.js" ></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/debug.addIndicators.js" ></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/animation.gsap.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/slick.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
 	var center = new google.maps.LatLng(55.789061, 37.729310);
