@@ -18,15 +18,15 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/site-logo.png" alt="" class="logo">
 			</div>
 			<div class="site-header__item">
-				<a href="mailto:info@bigmsk" class="mail">info@bigmsk.ru</a>
+				<a href="mailto:info@novform.ru" class="mail">info@novform.ru</a>
 			</div>
 			<div class="site-header__item">
-				<a href="skype:+74957893686" class="tel">+7 (495) <b>789-36-86</b></a>
+				<a href="skype:+74956638687" class="tel">+7 (495) <b>663-86-87</b></a>
 			</div>
 			<div class="site-header__item">
 				<p class="address">
-					105318, г. Москва,<br>
-					ул. Ибрагимова, д.31, (офис308)
+					г. Москва, ул. Авиамоторная<br>
+					дом 50, строение 2
 				</p>
 			</div>
 		</div>		

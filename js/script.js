@@ -1,3 +1,4 @@
+//переключение вкладок
 var controlBtn = $('.controls__button');
 controlBtn.click(function(){
 	var id = $(this).attr('id').split('-');
@@ -10,6 +11,7 @@ controlBtn.click(function(){
     }, 1000);
 });
 
+//jiggle
 /*$(window).bind('mousemove', function(e){ 
 	//коор центра окна
 	var x0 = $(window).width()/2;
@@ -57,9 +59,6 @@ $(window).bind('scroll', function(e){
 		console.log('4 элемент сверху и не виден');
 		//item.height(0);
 	};	
-	/*if (scrollTop + windowHeight / 2 > start + conHeight / 2) {
-		console.log(1);
-	};*/
 });
 
 //даем элементам зет индекс
@@ -74,31 +73,12 @@ for (var i = 0; i < items; i++) {
 var controller = new ScrollMagic.Controller();
 $.each(item, function(i, e) {
 	var openTween = TweenMax.to('#tr-'+(i+1), 1, {top: 12.5*(i+1)+'%'});
-	//var closeTween = TweenMax.to('#tr-'+(i+1), 1, {top: 35+i*5+'%'});
 
-	var openScene = new ScrollMagic.Scene({triggerElement: "#tr", duration: 270, offset: -135})
+	var openScene = new ScrollMagic.Scene({triggerElement: "#tr", duration: 270, offset: -70})
 		.setTween(openTween)
 		//.addIndicators() 
 		.addTo(controller);
-	/*var closeScene = new ScrollMagic.Scene({triggerElement: "#tr", duration: 270, offset: 430})
-		.setTween(closeTween)
-		.addIndicators()
-		.addTo(controller);*/
 });
-
-/*item.hover(function(){
-	$(this).addClass('active');
-}, function(){
-	$(this).removeClass('active');
-});*/
-
-/*item.click(function(){
-	var id = $(this).attr('id').split('-');
-	id = '#descr-' + id[1];
-	var content = $(id);
-	content.addClass('descr__item--visible');
-	content.siblings().removeClass('descr__item--visible');
-});*/
 
 //slick
 $('.slider').slick({
@@ -125,7 +105,7 @@ var colorTip = $('.color__tip');
 $(document).on('mousemove', function(e){
     $(colorTip).css({
        left:  e.pageX + 15,
-       top:   e.pageY
+       top:   e.pageY + 15
     });
 });
 colorItem.hover(function(){
@@ -140,3 +120,7 @@ $(document).on('mailsent.wpcf7', function () {
     var success = $('.success');
 	success.fadeIn().delay(1500).fadeOut();
 });
+
+//delete br
+var form = $('form');
+form.children().filter('br').remove();

@@ -28,7 +28,7 @@
 		</section>
 		<section class="content">
 			<div class="content__wrapper lcw">			
-				<div id="content-1" class="content__item content__item--visible">
+				<div id="content-1" class="content__item">
 					<section class="adv">
 						<div class="adv__wrapper lcw">
 							<h3 class="section-header"><span>Преимущества</span> сэндвич панелей</h3>
@@ -128,9 +128,9 @@
 							</div>
 							<div class="row">
 								<div class="col col--left">
-									<div class="type__item">
+									<div class="type__item type__item--lock">
 										<h3 class="section-header">Замок <span>Z-LOCK</span></h3>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/type/3.png" alt="" style="width: 250px; height: 140px;">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/type/3.png" alt="">
 										<div class="type__text">Обеспечивает прочное соединение и недопускает проникновения влаги в утеплитель.</div>
 									</div>
 								</div>
@@ -138,22 +138,18 @@
 									<div class="type__item">
 										<h3 class="section-header">Каталог <span>RAL</span></h3>
 										<div class="color">
-											<div class="color__item" data-color="1"></div>
-											<div class="color__item" data-color="2"></div>
-											<div class="color__item" data-color="3"></div>
-											<div class="color__item" data-color="4"></div>
-											<div class="color__item" data-color="5"></div>
-											<div class="color__item" data-color="6"></div>
-											<div class="color__item" data-color="7"></div>
-											<div class="color__item" data-color="8"></div>
-											<div class="color__item" data-color="9"></div>
-											<div class="color__item" data-color="10"></div>
-											<div class="color__item" data-color="11"></div>
-											<div class="color__item" data-color="12"></div>
-											<div class="color__item" data-color="13"></div>
-											<div class="color__item" data-color="14"></div>
-											<div class="color__item" data-color="15"></div>
-											<div class="color__item" data-color="16"></div>
+											<div class="color__item" data-color="RAL 5012 Голубой"></div>
+											<div class="color__item" data-color="RAL 1014 Слоновая кость"></div>
+											<div class="color__item" data-color="RAL 1015 Светлая слоновая кость"></div>
+											<div class="color__item" data-color="RAL 1018 Цинково-желтый"></div>
+											<div class="color__item" data-color="RAL 3003 Рубиново-красный"></div>
+											<div class="color__item" data-color="RAL 5005 Сигнальный синий"></div>
+											<div class="color__item" data-color="RAL 6002 Лиственно-зеленый"></div>
+											<div class="color__item" data-color="RAL 7004 Сигнальный серый"></div>
+											<div class="color__item" data-color="RAL 7047 Телегрей 4"></div>
+											<div class="color__item" data-color="RAL 9002 Светло-серый"></div>
+											<div class="color__item" data-color="RAL 9003 Сигнальный белый"></div>
+											<div class="color__item" data-color="RAL 9006 Бело-алюминиевый"></div>
 										</div>
 										<div class="color__tip"></div>
 										<div class="type__text">Выбор цвета сендвич-панели осуществляется по каталогу RAL. В качестве дополнительной услуги мы можем покрасить профиль в ваш фирменный оттенок.</div>
@@ -183,7 +179,48 @@
 						</div>
 					</section>					
 				</div>
-				<div id="content-2" class="content__item">345</div>
+				<div id="content-2" class="content__item content__item--visible">
+					<section class="iron">
+						<div class="iron__wrapper lcw">
+							<div class="iron__con">
+								<h2 class="section-header"><span>Профилированный</span> лист</h2>
+								<p>занимает одно из первых мест по популярности среди современных облицовочных и кровельных материалов. Это обуславливается различной номенклатурой и толщиной профнастила, а так же изготовлением его в размер Заказчика, что позволяет подобрать экономичное покрытие для зданий.</p>
+								<p>Профлист <span>используется для возведения стен, ограждений, а так же как кровельный материал,</span> стойкий к любым погодным условиям, имеющий небольшой вес, долговечность и простоту монтажа. Профлист бывает с оцинкованным или с полимерным покрытием, выпускается длиной до 12 метров.</p>
+							</div>
+						</div>
+					</section>
+					<section class="arch">
+						<div class="arch__wrapper lcw">
+							<div class="arch__con">
+								<h2 class="section-header"><span>Архитектурная</span> эстетичность</h2>
+								<p>Профлисты с полимерным покрытием окрашены в различные цвета, что позволяет Вам выбрать именно ту цветовую гамму строения, крыши или ограждения, которая будет подчеркивать Ваш вкус и выделять Ваше здание или ограждение из серой массы рядом стоящих зданий.</p>
+							</div>
+						</div>
+					</section>
+					<section class="request request--iron">
+						<div class="request__wrapper lcw">
+							<h3 class="section-header"><span>Оставьте заявку</span> и мы обязательн вам перезвоним</h3>
+							<!--<?php echo do_shortcode( '[contact-form-7 id="7"]' ); ?>-->
+							<form>
+								<input type="text" placeholder="Ваше имя" required>
+								<input type="tel" placeholder="Ваш телефон" required>
+								<input type="submit" value="Отправить заявку">
+							</form>
+							<div class="success">Сообщение отправлено</div>
+						</div>
+					</section>
+					<section class="info">
+						<div class="info__wrapper">
+							<p>Мы поставляем профнастил для строительства промышленных, сельскохозяйственных, гражданских зданий и сооружений. Профнастил выпускается по ГОСТ 24045-94 и ТУ 1122-040-02494680-95 как оцинкованный, так и полимерным покрытием. Производство профнастила ведется на двух импортных профилегибочных станах фирм "COMEC" и "METEXNO" из оцинкованных или окрашенных рулонов.</p> 
+							<p>Производительность прокатных станов - до 9 тыс. тонн профнастила в месяц. Профнастил выпускается длиной до 12 метров в размер Заказчика.</p>
+							<p>Различные виды профнастила, различная толщина оцинкованной рулонной стали (то 0,5 до 1,0 мм), изготовление в размер - все это позволяет подобрать наиболее удобное и экономичное стеновое и кровельное покрытие зданий и сооружений
+							В зависимости от области своего применения и жесткости листов, профилированный настил разделяется на несущий, кровельный и стеновой.</p>
+							<p>В зависимости от нанесенного на материал покрытия, профнастил бывает с оцинкованным покрытием или с полимерным покрытием (полиуретановое покрытие, полиэстер или пластизол). Профлисты с полимерным покрытием окрашены в различные цвета.</p>
+							<p>В зависимости от формы профилирования, профлисты производятся с синусообразными, закругленными или трапециеобразными профилями. Кроме этого, профнастил бывает разным по толщине стали (от 0,5 до 1 мм.) и длине листа (до 12 м.).</p>
+							<p>Все это позволяет Вам выбрать для себя наиболее оптимальный вариант применения данного материала в строительстве или ремонте и приобрести у нас по доступным ценам именно то, что Вам необходимо</p>
+						</div>
+					</section>
+				</div>
 				<div id="content-3" class="content__item">567</div>
 			</div>
 		</section>
