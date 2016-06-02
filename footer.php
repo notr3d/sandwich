@@ -1,9 +1,10 @@
 	</div>
 	<footer class="site-footer" role="contentinfo">
 		<div class="site-footer__wrapper lcw">
-			<div class="copy">© "Новый Стандарт" 2016</div>			
+			<div class="copy">© "Новый Формат" 2016</div>			
 		</div>
 	</footer>
+	<button class="scrollup"></button>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.js"></script>

@@ -15,7 +15,9 @@
 	<header class="site-header" role="banner">
 		<div class="site-header__wrapper lcw">
 			<div class="site-header__item">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/site-logo.png" alt="" class="logo">
+				<a href="http://novform.ru">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/site-logo.png" alt="" class="logo">
+				</a>
 			</div>
 			<div class="site-header__item">
 				<a href="mailto:info@novform.ru" class="mail">info@novform.ru</a>
