@@ -1065,14 +1065,15 @@ h6 {
     padding: 0;
   }
 }
-.adv__item {
-  text-align: center;
-  display: inline-block;
-  flex-basis: 19.777777%;
-  height: 190px;
+.adv__inner {
   background: #f57c20;
   padding-top: 30px;
-  margin: 1px;
+  height: 190px;
+  text-align: center;
+}
+.adv__item {
+  padding: 1px;
+  flex-basis: 20%;
   transform: translateY(-100px);
   opacity: 0;
   transition: .3s;
@@ -1083,7 +1084,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .adv__item {
-    flex-basis: 49.4%;
+    flex-basis: 50%;
   }
 }
 .adv__item:nth-child(1) .adv__img {

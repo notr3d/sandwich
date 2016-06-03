@@ -309,14 +309,15 @@ h1, h2, h3, h4, h5, h6 {
 			padding: 0;
 		}
 	}
-	&__item {
-		text-align: center;
-		display: inline-block;
-		flex-basis: 19.777777%;
-		height: 190px;
+	&__inner {
 		background: @orange;
 		padding-top: 30px;
-		margin: 1px;
+		height: 190px;	
+		text-align: center;
+	}
+	&__item {
+		padding: 1px;		
+		flex-basis: 20%;					
 		transform: translateY(-100px);
 		opacity: 0;
 		transition: .3s;
@@ -325,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
 			color: #fff;
 		}
 		@media @m {
-			flex-basis: 49.4%;
+			flex-basis: 50%;
 		}
 		&:nth-child(1) {
 			.adv__img {				

@@ -28,50 +28,70 @@
 		</section>
 		<section class="content">
 			<div class="content__wrapper lcw">			
-				<div id="content-1" class="content__item">
+				<div id="content-1" class="content__item content__item--visible">
 					<section class="adv">
 						<div class="adv__wrapper lcw">
 							<h3 class="section-header"><span>Преимущества</span> сэндвич панелей</h3>
 							<div id="adv" class="adv__con">
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Шумоизоляция</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Шумоизоляция</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Теплоизоляция</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Теплоизоляция</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Огнестойкость</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Огнестойкость</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Экологичность</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Экологичность</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Легкость</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Легкость</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Цветовая гамма</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Цветовая гамма</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Прочность</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Прочность</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Быстрота монтажа</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Быстрота монтажа</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Долговечность</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Долговечность</p>
+									</div>
 								</div>
 								<div class="adv__item">
-									<div class="adv__img"></div>
-									<p>Универсальность</p>
+									<div class="adv__inner">
+										<div class="adv__img"></div>
+										<p>Универсальность</p>
+									</div>
 								</div>							
 							</div>
 						</div>
@@ -217,7 +237,7 @@
 						</div>
 					</section>
 				</div>
-				<div id="content-3" class="content__item content__item--visible">
+				<div id="content-3" class="content__item">
 					<section class="zn">
 						<div class="zn__wrapper lcw">
 							<h2 class="section-header">
