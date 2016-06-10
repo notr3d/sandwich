@@ -65,7 +65,7 @@ $(window).bind('scroll', function(e){
 		$.each(advCon.children(), function(i, e){
 			setTimeout(function() {
 				$(e).addClass('adv__item--active');
-			}, (i * 50));
+			}, (i * 60));
 		})
 	}
 });

@@ -1074,9 +1074,7 @@ h6 {
 .adv__item {
   padding: 1px;
   flex-basis: 20%;
-  transform: translateY(-100px);
-  opacity: 0;
-  transition: .3s;
+  transition: .7s;
 }
 .adv__item p {
   margin: 0;
@@ -1118,8 +1116,7 @@ h6 {
   background-position: calc(-805px) -200px;
 }
 .adv__item--active {
-  opacity: 1;
-  transform: translateY(0);
+  transform: rotatey(360deg);
 }
 .adv__img {
   width: 100px;
