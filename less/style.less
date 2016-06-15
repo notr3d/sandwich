@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 		&:nth-child(3) {
 			background-image: url(img/controls/bg/3.jpg);
 		}		
-		h2 {
+		h1 {
 			font-size: 48px;
 			font-weight: bold;
 			color: #fff;
@@ -182,6 +182,24 @@ h1, h2, h3, h4, h5, h6 {
 				background: rgba(0, 0, 0, 0.5);
 			}
 		}
+		h2 {
+			font-size: 48px;
+			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+			margin: 0;
+			line-height: 50px;
+			height: 100px;
+			width: 300px;
+			margin: 0 auto 30px;
+			transition: .3s;
+			@media @m {
+				font-size: 30px;
+				line-height: 50px;
+				height: 50px;
+				background: rgba(0, 0, 0, 0.5);
+			}
+		}		
 		button {
 			position: absolute;
 			width: 100%;
@@ -914,6 +932,9 @@ h1, h2, h3, h4, h5, h6 {
 	.section-header {
 		font-size: 36px;
 		//margin-bottom: 20px;
+		@media @m {
+			font-size: 28px;
+		}
 	}
 	&__wrapper {
 		background: linear-gradient(to bottom, #151516, #1b1a1c) no-repeat center;

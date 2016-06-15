@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <div class="content-area">
-	<main class="" role="main">
-		<section class="controls">
+	<main class="">
+		<div class="controls">
 			<div class="controls__wrapper lcw">
 				<div class="controls__item">
 					<div class="controls__container">
 						<div class="controls__img"></div>
-						<h2>Сэндвич панели</h2>
+						<h1>Сэндвич панели</h1>
 					</div>
 					<button id="button-1" class="controls__button"></button>
 				</div>
@@ -25,11 +25,11 @@
 					<button id="button-3" class="controls__button"></button>
 				</div>	
 			</div>		
-		</section>
-		<section class="content">
+		</div>
+		<div class="content">
 			<div class="content__wrapper lcw">			
 				<div id="content-1" class="content__item content__item--visible">
-					<section class="adv">
+					<div class="adv">
 						<div class="adv__wrapper lcw">
 							<h3 class="section-header"><span>Преимущества</span> сэндвич панелей</h3>
 							<div id="adv" class="adv__con">
@@ -95,8 +95,8 @@
 								</div>							
 							</div>
 						</div>
-					</section>
-					<section class="mount">
+					</div>
+					<div class="mount">
 						<div class="mount__wrapper lcw">
 							<div class="col col--left">
 								<h3 class="section-header"><span>Из чего сделана</span> Сэндвич-панель</h3>
@@ -127,20 +127,20 @@
 								</div>
 							</div>						
 						</div>
-					</section>
-					<section class="type">
+					</div>
+					<div class="type">
 						<div class="type__wrapper lcw">
 							<div class="row">
 								<div class="col col--left">
 									<div class="type__item">
-										<h3 class="section-header"><span>Стеновые</span> сэндвич-панели</h4>
+										<h3 class="section-header"><span>Стеновые</span> сэндвич-панели</h3>
 										<img src="<?php echo get_template_directory_uri(); ?>/img/type/1.png" alt="">
 										<div class="type__text">Трехслойные стеновые сэндвич-панели производятся на автоматическом оборудовании и по технологии австралийской фирмы "Hilleng", гарантирующей высокое качество и отличные эксплуатационные свойства панелей</div>
 									</div>
 								</div>
 								<div class="col col--right">
 									<div class="type__item">
-										<h3 class="section-header"><span>Кровельные</span> сэндвич-панели</h4>
+										<h3 class="section-header"><span>Кровельные</span> сэндвич-панели</h3>
 										<img src="<?php echo get_template_directory_uri(); ?>/img/type/2.png" alt="">
 										<div class="type__text">Высокие трапециевидные ребра, обеспечивают сверхпрочность крыши и ее устойчивость к воздействию непогоды, снеговым нагрузкам и механическим ударам, кроме того прекрасно отводят воду и не страдают ото льда.</div>
 									</div>									
@@ -176,8 +176,8 @@
 								</div>
 							</div>	
 						</div>						
-					</section>					
-					<section class="filler">
+					</div>					
+					<div class="filler">
 						<div class="filler__wrapper lcw">
 							<h3 class="section-header"><span>Наполнитель</span> сэндвич-панелей</h3>
 							<div class="filler__con">
@@ -191,10 +191,10 @@
 								</div>
 							</div>
 						</div>
-					</section>										
+					</div>										
 				</div>
 				<div id="content-2" class="content__item">
-					<section class="iron">
+					<div class="iron">
 						<div class="iron__wrapper lcw">
 							<div class="col col--left">
 								<h2 class="section-header"><span>Профилированный</span> лист</h2>
@@ -203,8 +203,8 @@
 							</div>
 							<div class="col col--right"></div>
 						</div>
-					</section>
-					<section class="arch">
+					</div>
+					<div class="arch">
 						<div class="arch__wrapper lcw">
 							<div class="col col--left"></div>
 							<div class="col col--right">
@@ -212,8 +212,8 @@
 								<p>Профлисты с полимерным покрытием окрашены в различные цвета, что позволяет Вам выбрать именно ту цветовую гамму строения, крыши или ограждения, которая будет подчеркивать Ваш вкус и выделять Ваше здание или ограждение из серой массы рядом стоящих зданий.</p>
 							</div>
 						</div>
-					</section>
-					<section class="request request--iron">
+					</div>
+					<div class="request request--iron">
 						<div class="request__wrapper lcw">
 							<h3 class="section-header"><span>Оставьте заявку</span> и мы обязательно вам перезвоним</h3>
 							<!--<?php echo do_shortcode( '[contact-form-7 id="7"]' ); ?>-->
@@ -224,8 +224,8 @@
 							</form>
 							<div class="success">Сообщение отправлено</div>
 						</div>
-					</section>
-					<section class="info">
+					</div>
+					<div class="info">
 						<div class="info__wrapper">
 							<p>Мы поставляем профнастил для строительства промышленных, сельскохозяйственных, гражданских зданий и сооружений. Профнастил выпускается по ГОСТ 24045-94 и ТУ 1122-040-02494680-95 как оцинкованный, так и полимерным покрытием. Производство профнастила ведется на двух импортных профилегибочных станах фирм "COMEC" и "METEXNO" из оцинкованных или окрашенных рулонов.</p> 
 							<p>Производительность прокатных станов - до 9 тыс. тонн профнастила в месяц. Профнастил выпускается длиной до 12 метров в размер Заказчика.</p>
@@ -235,10 +235,10 @@
 							<p>В зависимости от формы профилирования, профлисты производятся с синусообразными, закругленными или трапециеобразными профилями. Кроме этого, профнастил бывает разным по толщине стали (от 0,5 до 1 мм.) и длине листа (до 12 м.).</p>
 							<p>Все это позволяет Вам выбрать для себя наиболее оптимальный вариант применения данного материала в строительстве или ремонте и приобрести у нас по доступным ценам именно то, что Вам необходимо</p>
 						</div>
-					</section>
+					</div>
 				</div>
 				<div id="content-3" class="content__item">
-					<section class="zn">
+					<div class="zn">
 						<div class="zn__wrapper lcw">
 							<h2 class="section-header">
 								Горячее <span>оцинкование</span>
@@ -256,8 +256,8 @@
 								<p>Наши менеджеры ответят на все ваши вопросы!</p>
 							</div>
 						</div>
-					</section>
-					<section class="request request--zn">
+					</div>
+					<div class="request request--zn">
 						<div class="request__wrapper lcw">
 							<h3 class="section-header"><span>Оставьте заявку</span> и мы обязательно вам перезвоним</h3>
 							<!--<?php echo do_shortcode( '[contact-form-7 id="7"]' ); ?>-->
@@ -268,8 +268,8 @@
 							</form>
 							<div class="success">Сообщение отправлено</div>
 						</div>
-					</section>
-					<section class="zn-info">
+					</div>
+					<div class="zn-info">
 						<div class="zn-info__wrapper lcw">
 							<div class="zn-info__text">
 								<p>Как правило, оцинкованные металлоконструкции служат в пределах от 25 до 50 лет, в зависимости от региона и условий эксплуатации.</p>
@@ -296,16 +296,16 @@
 								</ul>									<p>Стоимость горячего оцинкования определяется типом металлоконструкций и объемом заказа. Особо мелкие детали, изделия со сложной пространственной конфигурацией, объемные или мелкие конструкции цинкуются по договорной цене.</p>
 							</div>
 						</div>
-					</section>
+					</div>
 				</div>
 			</div>
-		</section>		
-		<section class="delivery">
+		</div>		
+		<div class="delivery">
 			<div class="delivery__wrapper lcw">
 				<h3 class="section-header">Доставка сэндвич-панелей <span>по всей России и СНГ</span></h3>
 			</div>
-		</section>
-		<section class="request">
+		</div>
+		<div class="request">
 			<div class="request__wrapper lcw">
 				<h3 class="section-header"><span>Оставьте заявку</span> на расчет стоимости заказа</h3>
 				<!--<?php echo do_shortcode( '[contact-form-7 id="7"]' ); ?>-->
@@ -316,8 +316,8 @@
 				</form>
 				<div class="success">Сообщение отправлено</div>
 			</div>
-		</section>
-		<section class="about">
+		</div>
+		<div class="about">
 			<div class="about__wrapper lcw">
 				<!--<h3 class="section-header">Кто мы</h3>-->
 				<div class="col col--left">
@@ -352,17 +352,17 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="address">
+		</div>
+		<div class="address">
 			<!--<div class="address__wrapper lcw">
 				<h3 class="section-header">Где мы</h3>				
 			</div>-->
-		</section>
-		<section class="map-container">
+		</div>
+		<div class="map-container">
 			<div class="map-container__wrapper lcw">
 				<div id="map" class="map"></div>
 			</div>
-		</section>		
+		</div>		
 	</main>
 </div>
 <?php get_footer(); ?>

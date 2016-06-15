@@ -3,16 +3,17 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Сайт компании ООО 'Новый Формат'. Продажа и установка сэндвич-панелей. Изготовление и поставка профлиста. Оказание услуг горячего цинкования металлоконструкций.">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>	
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div class="site">
-	<header class="site-header" role="banner">
+	<header class="site-header">
 		<div class="site-header__wrapper lcw">
 			<div class="site-header__item">
 				<a href="http://novform.ru">

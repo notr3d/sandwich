@@ -926,6 +926,26 @@ h6 {
 .controls__item:nth-child(3) {
   background-image: url(img/controls/bg/3.jpg);
 }
+.controls__item h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 50px;
+  height: 100px;
+  width: 300px;
+  margin: 0 auto 30px;
+  transition: .3s;
+}
+@media (max-width: 767px) {
+  .controls__item h1 {
+    font-size: 30px;
+    line-height: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
 .controls__item h2 {
   font-size: 48px;
   font-weight: bold;
@@ -1632,6 +1652,11 @@ h6 {
 }
 .iron .section-header {
   font-size: 36px;
+}
+@media (max-width: 767px) {
+  .iron .section-header {
+    font-size: 28px;
+  }
 }
 .iron__wrapper {
   background: linear-gradient(to bottom, #151516, #1b1a1c) no-repeat center;

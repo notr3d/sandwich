@@ -1,5 +1,5 @@
 	</div>
-	<footer class="site-footer" role="contentinfo">
+	<footer class="site-footer">
 		<div class="site-footer__wrapper lcw">
 			<div class="copy">© "Новый Формат" 2016</div>			
 		</div>
@@ -33,6 +33,33 @@
 	google.maps.event.addDomListener(window, 'load', init);
 </script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter37947005 = new Ya.Metrika({
+					id:37947005,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true,
+					trackHash:true,
+					ecommerce:"dataLayer"
+				});
+			} catch(e) { }
+		});
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37947005" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <?php wp_footer(); ?>
 </body>
 </html>
