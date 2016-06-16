@@ -1500,6 +1500,10 @@ h6 {
   border-color: #f8a769;
   color: #f57c20;
 }
+.request form input[type="file"] {
+  padding: 0;
+  background: none;
+}
 .request form input[type="submit"] {
   width: 185px;
   margin-top: 35px;
@@ -1623,8 +1627,9 @@ h6 {
 .success {
   display: none;
   position: fixed;
-  top: 150px;
+  top: 50%;
   left: 50%;
+  margin-top: -25px;
   margin-left: -120px;
   width: 240px;
   height: 50px;
