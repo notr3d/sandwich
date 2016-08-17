@@ -8,7 +8,7 @@ controlBtn.click(function(){
 	content.siblings().removeClass('content__item--visible');
 	$('html, body').animate({
         scrollTop: $(id).offset().top
-    }, 1000);
+    }, 300);
 });
 
 //jiggle
